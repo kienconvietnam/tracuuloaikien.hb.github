@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra Cứu Các Loài Kiến</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 0, 0);
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 98%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+        .ant {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px;
+            border-bottom: 1px solid #000000;
+        }
+        .ant img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .ant-info {
+            flex-grow: 1;
+        }
+        .ant-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tra Cứu Các Loài Kiến</h1>
+        <input type="text" id="search" placeholder="Nhập tên loài kiến...">
+        <div id="antList">
+            <div class="ant">
+                <img src="https://vietnampcs.vn/Uploads/images/kien-lua%20(1)(2).jpg" alt="Kiến lửa">
+                <div class="ant-info">
+                    <style>
+                        .ant-info h2 {
+                            color: #930505; /* Màu xanh dương */
+                        }
+                    </style>                      
+                    <h2>Kiến lửa (Solenopsis invicta)</h2>
+                    <p>Là loài kiến hung dữ, có thể đốt gây đau rát và dị ứng. Xuất xứ từ Nam Mỹ.</p>
+                    <p><strong>Đặc điểm:</strong> Màu đỏ nâu, kích thước nhỏ, hoạt động theo bầy đàn rất hiệu quả.</p>
+                    <p><strong>Tác động:</strong> Có thể gây hại cho cây trồng, vật nuôi và sức khỏe con người. Là loài xâm lấn nguy hiểm.</p>
+                    <p><strong>Biện pháp kiểm soát:</strong> Sử dụng mồi diệt kiến, thuốc trừ sâu sinh học, và kiểm tra tổ kiến thường xuyên.</p>
+                </div>
+            </div>       
+            <div class="ant">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi5_tvhvMoYJAPV8ij4K3onQA22NQi-VWDnw&s" alt="Kiến thợ mộc" onclick="openLightbox(this.src)">
+                <div class="ant-info">
+                    <h2>Kiến thợ mộc (Camponotus gigas)</h2>
+                    <p>Là loài kiến lớn nhất hiện nay, thường làm tổ trong gỗ, có thể gây hư hại cho các công trình xây dựng nếu tổ của chúng phát triển mạnh.</p>
+                    <p><strong>Đặc điểm:</strong> Kiến thợ mộc có cơ thể lớn, màu đen hoặc nâu sẫm, thân hình thô, và có thể dài tới 2.5 cm.</p>
+                    <p><strong>Tập tính:</strong> Sống trong các tổ gỗ bị mục nát hoặc cây cối chết. Chúng thường di chuyển chậm và có sự phân chia công việc rõ rệt trong đàn.</p>
+                    <p><strong>Tác động:</strong> Kiến thợ mộc không gây hại trực tiếp cho con người nhưng có thể làm hư hại các công trình xây dựng hoặc gỗ trong các công trình. Chúng có thể cắn nếu bị quấy rầy.</p>
+                    <p><strong>Biện pháp kiểm soát:</strong> Sử dụng thuốc diệt côn trùng chuyên dụng, kiểm tra các tổ kiến trong gỗ hoặc các công trình xây dựng thường xuyên để phát hiện sớm và xử lý kịp thời.</p>
+                </div>
+            </div>                               
+            <div class="ant">
+                <img src="https://bugguide.net/images/raw/FZK/RCZ/FZKRCZMRJZQRFZZZFZZZYZERHH7ZHH8RQHERVLSZQHPRKH7ZAL7Z9LHZTZKRLHMZDLGRKHKZDLGR.jpg" alt="Kiến đen nhỏ" onclick="openLightbox(this.src)">
+                <div class="ant-info">
+                    <h2>Kiến đen nhỏ (Monomorium minimum)</h2>
+                    <p>Loài kiến nhỏ, thường thấy trong nhà. Thích thực phẩm ngọt.</p>
+                    <p><strong>Đặc điểm:</strong> Kiến nhỏ màu đen bóng, dài khoảng 2-3 mm.</p>
+                    <p><strong>Tập tính:</strong> Thường làm tổ ở các nơi ẩm thấp trong nhà, như trong tường hoặc dưới sàn nhà. Có xu hướng tìm kiếm thức ăn ngọt.</p>
+                    <p><strong>Tác động:</strong> Không gây hại nghiêm trọng nhưng có thể gây phiền toái trong nhà, đặc biệt là khi chúng tìm thấy thực phẩm. Dễ dàng xâm nhập vào các nguồn thực phẩm trong bếp.</p>
+                    <p><strong>Biện pháp kiểm soát:</strong> Vệ sinh khu vực nấu ăn sạch sẽ, dùng mồi diệt kiến và bịt kín các khe nứt trong nhà.</p>
+                </div>
+            </div>             
+            <div class="ant">
+                <img src="https://bugguide.net/images/cache/ZL8/ZSL/ZL8ZSLGZ4LBHNHLR8HZRWHOH7HAHZL2ZSL2Z4L1ZUHWZ8LVZKLCH4HRRUHCHKLVZUHHR4HGZMHCHIHCHLLAH4H4ZQLTH.jpg" alt="Kiến hoa" onclick="openLightbox(this.src)">
+                <div class="ant-info">
+                    <h2>Kiến hoa (Monomorium floricola)</h2>
+                    <p>Loài kiến rất nhỏ, thường sống trong nhà và các công trình nhân tạo.</p>
+                    <p><strong>Đặc điểm:</strong> Cơ thể nhỏ, màu nâu đến nâu đen, dài khoảng 1.5 - 2 mm.</p>
+                    <p><strong>Tập tính:</strong> Sống theo đàn lớn, thích nghi tốt trong môi trường ấm và ẩm. Là loài kiến không cắn nhưng rất khó kiểm soát do khả năng di chuyển và phát tán mạnh.</p>
+                    <p><strong>Tác động:</strong> Thường gây phiền toái trong nhà dân và cơ sở thương mại do di chuyển trên thực phẩm, thiết bị và các vật dụng khác.</p>
+                    <p><strong>Biện pháp kiểm soát:</strong> Làm sạch kỹ các khu vực có thức ăn, sử dụng bẫy mồi chuyên dụng và kiểm tra kỹ lưỡng các khe nứt và điểm xâm nhập.</p>
+                </div>
+            </div>      
+            <div class="ant">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUbKTnKax66vcv4LsRPN1twYIjkKeNR2PJw&s" alt="Kiến Pharaoh">
+                <div class="ant-info">
+                    <h2>Kiến Pharaoh (Monomorium pharaonis)</h2>
+                    <p>Loài kiến nhỏ bé, hay làm tổ trong nhà, khó kiểm soát do sinh sản nhanh.</p>
+                    <p><strong>Đặc điểm:</strong> Màu vàng nhạt đến nâu nhạt, kích thước rất nhỏ (khoảng 2 mm).</p>
+                    <p><strong>Tập tính:</strong> Thường làm tổ trong các khe nứt tường, thiết bị điện, và nơi có nhiệt độ ổn định như bệnh viện, nhà hàng.</p>
+                    <p><strong>Tác động:</strong> Có thể lây lan vi khuẩn, gây ô nhiễm thực phẩm và ảnh hưởng đến sức khỏe, đặc biệt là trong môi trường y tế.</p>
+                    <p><strong>Biện pháp kiểm soát:</strong> Sử dụng bẫy mồi chuyên dụng cho kiến Pharaoh, vệ sinh khu vực thường xuyên, bịt kín các khe nứt và lỗ hổng.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search');
+        const antList = document.getElementById('antList');
+        const ants = antList.getElementsByClassName('ant');
+
+        searchInput.addEventListener('keyup', function() {
+            const filter = searchInput.value.toLowerCase();
+            for (let i = 0; i < ants.length; i++) {
+                const ant = ants[i];
+                const text = ant.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    ant.style.display = 'flex';
+                } else {
+                    ant.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
